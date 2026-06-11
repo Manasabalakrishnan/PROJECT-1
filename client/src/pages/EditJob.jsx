@@ -1,0 +1,1 @@
+import {useEffect,useState} from 'react';export default function Home(){const[jobs,setJobs]=useState([]);useEffect(()=>{fetch('http://localhost:5000/api/jobs').then(r=>r.json()).then(setJobs)},[]);return <div><h1>Jobs</h1>{jobs.map(j=><div key={j._id}><h3>{j.title}</h3><p>{j.company}</p></div>)}</div>}

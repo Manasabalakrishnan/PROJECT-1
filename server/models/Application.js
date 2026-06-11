@@ -1,0 +1,1 @@
+const mongoose=require('mongoose');module.exports=mongoose.model('Application',new mongoose.Schema({jobId:{type:mongoose.Schema.Types.ObjectId,ref:'Job'},name:String,email:String,phone:String},{timestamps:true}));

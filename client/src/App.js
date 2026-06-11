@@ -1,0 +1,1 @@
+import {BrowserRouter,Routes,Route} from 'react-router-dom';import Home from './pages/Home';import AddJob from './pages/AddJob';export default function App(){return <BrowserRouter><Routes><Route path='/' element={<Home/>}/><Route path='/add' element={<AddJob/>}/></Routes></BrowserRouter>}
